@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Impétigo",
+        "resumen": "Infección cutánea muy contagiosa que ocasiona llagas rojas en el rostro. El impétigo afecta principalmente a los bebés y a los niños pequeños. El síntoma principal son las llagas rojas que se forman alrededor de la nariz y la boca. Las llagas se revientan, supuran durante algunos días y, luego, forman una costra de color amarillo amarronado. Los antibióticos acortan el período de infección y pueden evitar su propagación.",
+        "sintomas": "Requiere diagnóstico médico. El síntoma principal son las llagas rojas que se forman alrededor de la nariz y la boca. Las llagas se revientan, supuran durante algunos días y, luego, forman una costra de color amarillo amarronado." 
+    },
+    {
+        "name":"Celulitis",
+        "resumen": "Infección cutánea bacteriana común y potencialmente grave. En la celulitis, una bacteria ingresa a la piel. La celulitis puede extenderse rápidamente. La piel afectada tiene una apariencia hinchada y rojiza, y puede estar caliente y sensible. Sin tratamiento con un antibiótico, la celulitis puede ser mortal.",
+        "sintomas":"La celulitis puede extenderse rápidamente. La piel afectada tiene una apariencia hinchada y rojiza, y puede estar caliente y sensible. Las personas pueden sufrir: Áreas de dolor: piel. Piel: calor, ampolla, erupciones rojas o hinchazón Todo el cuerpo: escalofríos, fiebre o malestar."
+    },
+    {
+        "name":"Linfadenitis Aguda",
+        "resumen": "Es una infección de los ganglios linfáticos (también llamados nódulos linfáticos). Es una complicación de ciertas infecciones bacterianas. La linfadenitis ocurre cuando los ganglios resultan agrandados por hinchazón (inflamación), por lo regular en respuesta a bacterias, virus u hongos. Los ganglios inflamados generalmente se encuentran cerca del sitio de una infección, tumor o inflamación.",
+        "sintomas":"Los síntomas pueden incluir: Piel enrojecida y sensible sobre el ganglio linfático, Ganglios linfáticos inflamados, sensibles o duros, Fiebre. Los ganglios linfáticos se pueden sentir elásticos si se ha formado un absceso (bolsa de pus) o si están inflamados."
+    },
+    {
+        "name":"Quiste Pionidal",
+        "resumen":"El quiste suele estar ubicado cerca del coxis y puede infectarse fácilmente. Los síntomas de un quiste infectado incluyen dolor, enrojecimiento de la piel o drenaje de pus o sangre. El tratamiento consiste en drenar y extirpar quirúrgicamente el quiste.",
+        "sintomas":"Los síntomas de un quiste infectado incluyen dolor, enrojecimiento de la piel o drenaje de pus o sangre."
+    },
+    {
+        "name":"Pioderma",
+        "resumen":"El pioderma gangrenoso es un trastorno poco frecuente que provoca la aparición de llagas grandes y dolorosas (úlceras) en la piel, en especial en las piernas. Se desconocen las causas exactas del pioderma gangrenoso, pero parece ser un trastorno del sistema inmunitario.",
+        "sintomas":"El pioderma gangrenoso, generalmente, comienza con un bulto rojo pequeño en la piel, el cual puede parecerse a una picadura de araña. En pocos días, esta protuberancia puede convertirse en una gran llaga dolorosa y abierta."
+    },
+    {
+        "name":"Penfigo",
+        "resumen":"El pénfigo es una enfermedad que causa ampollas y llagas en la piel o las membranas mucosas, como la boca o los genitales. El pénfigo puede producirse a cualquier edad, pero se observa con mayor frecuencia en personas de mediana edad o mayores.",
+        "sintomas":"El pénfigo provoca la aparición de ampollas en la piel y las membranas mucosas. Las ampollas se revientan con facilidad, y dejan llagas abiertas que generan secreciones y se infectan."
+    },
+    {
+        "name":"Dermatitis Seborreica",
+        "resumen":"Afección de la piel que ocasiona áreas escamosas y piel roja, particularmente en el cuero cabelludo. También puede ocurrir en zonas grasosas del cuerpo, como la cara, la parte superior del pecho y la espalda.",
+        "sintomas":"Además de áreas escamosas y manchas rojas en la piel, la dermatitis seborreica puede causar caspa persistente."
+    },
+    {
+        "name":"Herpes Simple",
+        "resumen":"El herpes es una infección causada por un virus herpes simple (VHS). El herpes bucal provoca llagas alrededor de la boca o en el rostro. El herpes genital es una enfermedad de transmisión sexual (ETS). Puede afectar los genitales, las nalgas o el área del ano.",
+        "sintomas":"El herpes causa ampollas o úlceras en la boca o en los genitales, y a menudo con la primera infección, fiebre y sensación de malestar general."
+    },
+    {
+        "name":"Psoriasis",
+        "resumen":"Afección en la que las células de la piel se acumulan para formar escamas y manchas secas que producen comezón. Se cree que la psoriasis es un problema del sistema inmunológico. Algunos desencadenantes son las infecciones, el estrés y los resfríos.",
+        "sintomas":"El síntoma más común es un sarpullido en la piel, aunque algunas veces puede extenderse a las uñas o las articulaciones. Las personas pueden sufrir: Áreas de dolor: articulaciones. Piel: erupciones, descamación, enrojecimiento, fisuras, grosor, piel escamosa, protuberancia pequeña o seca También comunes: articulación rígida, depresión, picazón, placa, pozos pequeños en las uñas o tendones inflamados"
+    },
+    {
+        "name":"Urticaria",
+        "resumen":"Sarpullido en la piel ocasionado por una reacción a la comida, los medicamentos y otros agentes irritantes. La urticaria es una erupción cutánea común ocasionada por muchos factores, como ciertas comidas, algunos medicamentos y el estrés.",
+        "sintomas":"Los síntomas incluyen la aparición de ronchas rojas o del color de la piel, levantadas y que causan comezón en la superficie de la piel. Las personas pueden sufrir: Piel: zona elevada de la piel, hinchazón o inflamación en respuesta al tacto. También comunes: hinchazón o picazón"
+    }
+]

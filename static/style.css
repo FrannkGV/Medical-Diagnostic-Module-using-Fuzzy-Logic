@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700;800&family=Poppins:wght@200;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+header {
+    background-color: #000046;
+    max-height: 600px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 70, 1) 21%, rgba(0, 0, 129, 1) 100%);
+}
+
+.contenedor-header {
+    display: flex;
+    padding: 150px 0px 50px 150px;
+}
+
+.portada {
+    position: relative;
+    top: -20px;
+    flex-direction: column;
+}
+
+.imagen-portada {
+    width: 650px;
+    height: 550px;
+    display: flex;
+    position: relative;
+    top: -80px;
+    left: -80px;
+    z-index: 1000;
+}
+
+h1 {
+    color: #6F6FD8;
+    font-size: 48px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #BCE9FC;
+    font-size: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+}
+
+h3 {
+    color: #6F6FD8;
+    font-size: 32px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+
+.portada>p {
+    color: #BDBDFF;
+    font-size: 18px;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.wave {
+    position: relative;
+    width: 100%;
+    top: -300px;
+}
+
+.contenedor {
+    padding: 100px 150px;
+    text-align:center;
+}
+
+.form-container.disable{
+    display:none !important;
+}
+
+.titulo {
+    color: #010196;
+    font-size: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Aqui empieza el form*/
+
+.contenedor {
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px 100px;
+}
+
+
+.sintoma {
+    display: flex;
+    flex-direction: row;
+    background-color: #E4E4E4;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 15px 0px;
+}
+
+.container{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 5px;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: solid 1px #0000462f;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #00004640;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #000046;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.sintoma {
+    padding-right: 35px;
+    color: #000046;
+    font-size: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+.sintoma>p {
+    font-size: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 40%;
+}
+
+.aceptar {
+    background-color: #010196;
+    color: #F5F5F5;
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 80px;
+    border-radius: 8px;
+    border: solid 2px #010196;
+    transition: 0.3s;
+    margin-top: 30px;
+    display:inline-block;
+}
+
+.aceptar:hover {
+    background-color: #F5F5F5;
+    color: #010196;
+    border: solid 2px #010196;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.slider-container {
+    width: 62%;
+    margin-right: 40px;
+    height: 60px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.slider-container .slider-deco {
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    bottom: calc(100% - 5px);
+    margin-left: -61px;
+    left: 12px;
+    display: inline-flex;
+    text-align: center;
+}
+
+.slider-container .slider-deco .container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 8px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.slider-container .slider-deco .container .triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid rgb(0, 35, 71);
+    position: absolute;
+    top: 100%;
+    left: calc(50% - 15px);
+    transition: 0.2s;
+}
+
+/*Colors*/
+.slider-container.green-flag .slider-deco .container {
+    background: #1fd11f;
+}
+
+.slider-container.green-flag .slider-deco .container .triangle {
+    border-top: 10px solid #1fd11f;
+}
+
+/*.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    background: #000046;
+    cursor: pointer;
+    border-radius: 50%;
+}*/
+
+.slider-container.yellow-flag .slider-deco .container {
+    background: #e9e21e;
+}
+
+.slider-container.yellow-flag .slider-deco .container .triangle {
+    border-top: 10px solid #e9e21e;
+}
+
+.slider-container.orange-flag .slider-deco .container {
+    background: #eb6912;
+}
+
+.slider-container.orange-flag .slider-deco .container .triangle {
+    border-top: 10px solid #eb6912;
+}
+
+.slider-container.red-flag .slider-deco .container {
+    background: #d11f1f;
+}
+
+.slider-container.red-flag .slider-deco .container .triangle {
+    border-top: 10px solid #d11f1f;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    background: #F5F5F5;
+    border-radius: 50px;
+    border: solid 1px #0000461a;
+}
+
+.slider::-ms-fill-lower {
+    background: rgb(0, 35, 71);
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    background: #000046;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slider::-moz-range-thumb {
+    width: 23px;
+    height: 23px;
+    background: #0412aa;
+    cursor: pointer;
+}
+
+/*  Toggle switch enfermedades*/
+.switchBtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.switchBtn input {display:none;}
+
+.slide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #dadada;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px;
+    color: #000046;
+    border-radius: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.slide:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: calc(100% - 32px);
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slide {
+    background-color: #0412aa;
+    padding-left: 10px;
+    color: #fff;
+}
+input:focus + .slide {
+    box-shadow: 0 0 1px #01aeed;
+}
+input:checked + .slide:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: -20px;
+}
+
+/*enfermedades*/
+
+.enfermedades {
+    display:none;
+    padding: 0px 15px;
+    border-bottom: 1px solid #ccc;
+    animation: appear 0.5s linear;
+}
+
+.enfermedades.show {
+    display:block;
+}
+
+.enfermedades .radio label,
+.enfermedades label {
+    display: inline-block;
+    cursor: pointer;
+    color: #0412aa;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.enfermedades .radio label:hover,
+.enfermedades label:hover {
+    background: rgba(20, 20, 20, 0.054);
+}
+
+.enfermedades .radio label:before,
+.enfermedades label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid #0412aa;
+}
+
+.enfermedades input[type="radio"] {
+    display: none;
+}
+
+.enfermedades input[type="radio"]:checked+label:before {
+    display: none;
+}
+
+.enfermedades input[type="radio"]:checked+label {
+    padding: 5px 15px;
+    background: #0412aa;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.enfermedades label:before {
+    border-radius: 3px;
+}
+
+.enfermedades input[type="checkbox"] {
+    display: none;
+}
+
+.enfermedades input[type="checkbox"]:checked+label:before {
+    display: none;
+}
+
+.enfermedades input[type="checkbox"]:checked+label {
+    background: #0412aa;
+    color: #fff;
+    padding: 5px 15px;
+    margin: 5px 5px;
+}
+
+
+/*-- Diagnostico --*/
+
+.diagnostico {
+    border-radius: 20px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background: url(/static/img/Doctor-Diagnostico.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin-top:50px;
+}
+
+.titulo2 {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 50px;
+    color: cornsilk;
+    background-color: #000046;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.titulo2>span {
+    color: #ececec;
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+}
+
+.info {
+    padding-top: 0px;
+}
+
+.contenido {
+    display: flex;
+}
+
+.informacion {
+    padding: 30px 50px 50px 80px;
+    padding-left: 40px;
+    padding-right: 480px;
+    box-sizing: border-box;
+    min-height: 550px;
+}
+
+.subtitulo {
+    color: #0412aa;
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.texto {
+    padding: 0px 30px;
+    text-align: justify;
+    color: #000046;
+    font-size: 16px;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.imagen-diagnostico {
+    width: 30%;
+    margin-top: 10%;
+}
+
+
+/* loader */
+.loading{
+    display:none;
+    justify-content: center;
+    align-items:center;
+    padding:50px;
+}
+
+.loading.show{
+    display:flex;
+}
+
+.loading .cont{
+    text-align:center;
+}
+
+.loading .cont p{
+    color: #010196;
+    font-size: 25px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+    display:block;
+}
+
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: #BDBDFF;
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: #BDBDFF;
+  }
+  .lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }

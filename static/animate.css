@@ -1,0 +1,50 @@
+@keyframes appear {
+    0%{
+        opacity: 0;
+        transform: scale(0);   
+    }
+    69%{
+        transform: scale(0);
+    }
+    70%{
+        transform: scale(1.1);
+    }
+    80%{
+        transform: scale(1);
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes changeGreen {
+    from {
+    }
+    to {
+        background: #1fd11f;
+    }
+}
+
+@keyframes changeYellow {
+    from {
+    }
+    to {
+        background: #e9e21e;
+    }
+}
+
+@keyframes changeOrange {
+    from {
+    }
+    to {
+        background: #eb6912;
+    }
+}
+
+@keyframes changeRed {
+    from {
+    }
+    to {
+        background: #d11f1f;
+    }
+}

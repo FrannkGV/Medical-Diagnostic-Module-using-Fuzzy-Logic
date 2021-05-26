@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/animate.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final AI</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/static/main.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="contenedor-header">
+      <div class="portada">
+        <h1>Diagnóstico de enfermedades</h1>
+        <h2>CUTANEAS</h2>
+        <h3>aplicando logica difusa</h3>
+
+        <p>Gonzalez Vargas Francisco Javier <br>
+          Robles Cruz Uriel Jafet<br>
+          Carrillo morales José Martin</p>
+      </div>
+      <img class="imagen-portada" src="/static/img/doctor.png" alt="">
+    </div>
+    <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M-0.90,71.34 C254.17,155.23 421.22,110.81 505.30,5.24 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: #f2f2f2;"></path>
+      </svg></div>
+  </header>
+
+  <div class="contenedor form-container">
+    <p class="titulo">Seleccione los sintomas</p>
+    <div class="form"></div>
+
+    <button class="aceptar" id="calcular">Calcular</button>
+  </div>
+
+  <div class="loading">
+    <div class="cont">
+      <div class="lds-heart"><div></div></div>
+      <p>Calculando tu enfermedad, por favor espere...</p>
+    </div>
+  </div>
+
+  <div class="contenedor info"></div>
+
+</body>
+
+</html>
